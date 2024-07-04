@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>欢迎页面</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        text-align: center;
+      }
+      h1 {
+        color: #333;
+        margin-bottom: 20px;
+      }
+      .button {
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #fff;
+        background: #007bff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+      .button:hover {
+        background: #0056b3;
+      }
+      .button:active {
+        transform: translateY(2px);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>大家好，欢迎来到工网2202</h1>
+      <!-- 按钮样式美化并添加点击事件处理器 -->
+      <button class="button" title="1" onclick="goToPage('/2.html')">
+        转到第二页
+      </button>
+    </div>
+
+    <script>
+      function goToPage(url) {
+        window.location.href = url; // 使用JavaScript实现页面跳转
+      }
+    </script>
+  </body>
+</html>
